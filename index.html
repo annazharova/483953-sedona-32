@@ -5,8 +5,108 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+    <header class="page-header">
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#"><span class="visually-hidden">Избранное</span></a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Хочу сюда</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+    <main class="main-index">
+      <h1 class="visually-hidden">Седона</h1>
+      <section>
+        <h2 class="visually-hidden">О Седоне</h2>
+          <img src="" alt="Скалы">
+          <p class="lead">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="text-main">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+          <h3 class="adventage-title white">Настоящий городок</h3>
+            <img src="" alt="Вид на ресторан">
+            <span>— №1 —</span>
+            <p class="text-basic white">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <ul class="adventage-list">
+              <li class="adventage-item">
+                <p class="adventage-title">Жильё</p>
+                <p class="text-basic">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              </li>
+              <li class="adventage-item">
+                <p class="adventage-title">Еда</p>
+                <p class="text-basic">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+              <li class="adventage-item">
+                <p class="adventage-title">Сувениры</p>
+                <p class="text-basic">Не только китайского, но и настоящего местного производства!</p>
+              </li>
+            </ul>
+          <h3 class="adventage-title white">Там есть мост дьявола</h3>
+            <img src="" alt="Мост дьявола">
+            <span>— №2 —</span>
+            <p class="text-basic white">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          <h3 class="adventage-title">Небольшая площадь</h3>
+            <span>— №3 —</span>
+            <p class="text-basic">Все достопримечательности находятся очень близко</p>
+          <h3 class="adventage-title">Красивая дорога</h3>
+            <span>— №4 —</span>
+            <p class="text-basic">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          <h3 class="adventage-title">Мало туристов</h3>
+            <span>— №5 —</span>
+            <p class="text-basic">Большинство едет в Гранд Каньон и толпится там</p>
+      </section>
+      <section>
+        <h2 class="visually-hidden">Поиск гостиницы</h2>
+        <p class="lead">Заинтересовались?</p>
+        <p class="text-main">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a href="catalog.html">Поиск гостиницы в Седоне</a>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p class="lead white">Подпишитесь на рассылку</p>
+      <p class="text-main white">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <input type="text" name="subscribe" placeholder="Ваш e-mail">
+        <input type="submit" value="Подписаться">
+      </form>
+      <ul class="social-list">
+        <li class="social-item"><a href="https://twitter.com/htmlacademy_ru">Twitter</a></li>
+        <li class="social-item"><a href="https://www.facebook.com/htmlacademy">Facebook</a></li>
+        <li class="social-item"><a href="https://www.youtube.com/c/HTMLAcademyRUS">Youtube</a></li>
+      </ul>
+      <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a href="https://htmlacademy.ru/">HTML Academy</a>
+    </footer>
 
   </body>
 </html>
+
+<!-- Кроссбраузерность
+Chrome: последняя стабильная версия.
+Firefox: последняя стабильная версия.
+Safari: последняя стабильная версия (для студентов с macOS).
+ОБЩИЕ ТРЕБОВАНИЯ
+При нехватке контента страницы подвал прижат к низу страницы.
+Модальные окна должны позиционироваться относительно видимой части экрана.
+Иконки социальных сетей в футере ведут на профили .html academy:
+Facebook — https://www.facebook.com/htmlacademy
+Twitter — https://twitter.com/htmlacademy_ru
+Youtube — https://www.youtube.com/c/HTMLAcademyRUS
+Логотип и текст .html academy ведут на главную страницу сайта разработчика — https://htmlacademy.ru/ -->
