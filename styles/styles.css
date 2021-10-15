@@ -14,7 +14,16 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -24,14 +33,17 @@ body {
   background-color: #f2f2f2;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
+/* TODO: поменять стили тегов на стили классов */
 h1 {
   font-style: normal;
   font-weight: bold;
   font-size: 60px;
   line-height: 78px;
 }
-
-/* TODO: поменять стили тегов на стили классов */
 
 h2 {
   font-size: 40px;
@@ -68,10 +80,7 @@ a {
   text-decoration: none;
 }
 
-.button-memories-delete,
-.button-memories,
-.button-more
- {
+.button {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
