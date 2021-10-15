@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/pt-sans-regular.woff2") format("woff2");
+  src: url("../fonts/pt-sans-regular.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/pt-sans-bold.woff2") format("woff2");
+  src: url("../fonts/pt-sans-bold.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -30,6 +30,8 @@ h1 {
   font-size: 60px;
   line-height: 78px;
 }
+
+/* TODO: поменять стили тегов на стили классов */
 
 h2 {
   font-size: 40px;
@@ -152,7 +154,7 @@ h3,
   background-color: #83B3D300;
 }
 
-.telefon {
+.telephone {
   font-size: 30px;
   line-height: 30px;
 }
