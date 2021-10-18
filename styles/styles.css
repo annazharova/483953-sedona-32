@@ -42,6 +42,9 @@ body {
 .page-footer {
   display: flex;
   flex: 0 0 auto;
+  flex-direction: column;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .main-container {
@@ -54,6 +57,7 @@ body {
   flex-direction: column;
   width: 1200px;
   margin: 0 auto;
+  background-color: #ffffff;
 }
 
 /* TODO: поменять стили тегов на стили классов */
@@ -92,6 +96,7 @@ a {
   display: flex;
   width: 1200px;
   margin: 0 auto;
+  background-color: #ffffff;
 }
 
 .navigation-list {
@@ -103,6 +108,8 @@ a {
   font-size: 20px;
   line-height: 26px;
   background-color: #ffffff;
+
+  list-style-type: none;
 }
 
 .navigation-user {
@@ -139,13 +146,23 @@ a {
   font-size: 30px;
   line-height: 36px;
   color: #000000;
-  /* background-color: #ffffff; */
   text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+
+.lead-container {
+  background-color: #ffffff;
+  height: 282px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .text-main {
   font-size: 22px;
   line-height: 26px;
+  text-align: center;
 }
 
 h3,
@@ -164,15 +181,24 @@ h3,
   display: flex;
   justify-content: space-between;
   text-align: center;
+
+  list-style-type: none;
 }
 
 .advantage-item {
   width: 400px;
   height: 384px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .blue-tile {
   background-color: #83B3D3;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .accomodation {
@@ -210,6 +236,29 @@ h3,
   /* background-color: #83B3D3; */
 }
 
+.search-hotels {
+  text-align: center;
+  height: 417px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.social-list {
+  display: flex;
+
+  list-style-type: none;
+}
+
+.contacts-container {
+  display: flex;
+  background-color: #ffffff;
+  padding: 0 70px;
+  justify-content: space-between;
+  height: 120px;
+  align-items: center;
+}
+
 .less-space {
   line-height: 26px;
 }
@@ -224,12 +273,22 @@ h3,
   background-size: 1200px 411px;
   background-repeat: no-repeat;
   background-color: #83b3d3;
+  text-align: center;
+  height: 411px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/* .footer-index .white,
-.main-inner .white {
-  background-color: #83B3D3;
-} */
+.footer-inner {
+  text-align: center;
+  height: 411px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #000000;
+  background-color: #ffffff;
+}
 
 .telephone {
   font-size: 30px;
