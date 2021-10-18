@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/pt-sans-regular.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/pt-sans-bold.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -70,14 +70,18 @@ h1 {
 
 h2 {
   font-size: 40px;
+  line-height: 48px;
+
 }
 
 h3 {
   font-size: 30px;
+  line-height: 36px;
 }
 
 h4 {
   font-size: 24px;
+  line-height: 28px;
 }
 
 a {
@@ -95,6 +99,7 @@ a {
 .navigation{
   display: flex;
   width: 1200px;
+  height: 70px;
   margin: 0 auto;
   background-color: #ffffff;
 }
@@ -110,6 +115,11 @@ a {
   background-color: #ffffff;
 
   list-style-type: none;
+
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .navigation-user {
@@ -233,7 +243,6 @@ h3,
 
 .white {
   color: #ffffff;
-  /* background-color: #83B3D3; */
 }
 
 .search-hotels {
@@ -298,6 +307,26 @@ h3,
 .button-green {
   color: #ffffff;
   background-color: #7DB54F;
+}
+
+.breadcrumbs {
+  display: flex;
+
+  list-style-type: none;
+}
+
+.catalog-filter-container {
+  display: flex;
+}
+
+.catalog-filter-list {
+
+  list-style-type: none;
+}
+
+.product-list {
+
+  list-style-type: none;
 }
 
 .product-card-link {
