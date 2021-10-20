@@ -97,7 +97,8 @@ a {
 }
 
 .navigation{
-  display: flex;
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
   width: 1200px;
   height: 70px;
   margin: 0 auto;
@@ -106,7 +107,7 @@ a {
 
 .navigation-list {
   margin: 0;
-  padding: 0;
+  padding: 0 70px;
   width: 430px;
 
   font-weight: 700;
@@ -118,7 +119,6 @@ a {
 
 
   display: flex;
-  justify-content: space-around;
   align-items: center;
 }
 
@@ -130,6 +130,7 @@ a {
 
 .navigation-link {
   text-decoration: none;
+  margin: 16px;
 }
 
 .logo {
@@ -163,7 +164,8 @@ a {
 
 .lead-container {
   background-color: #ffffff;
-  height: 282px;
+  padding-top: 63px;
+  padding-bottom: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -183,6 +185,7 @@ h3,
   line-height: 28px;
   text-transform: uppercase;
   text-align: center;
+  padding-top: 100px;
 }
 
 .advantage-list {
@@ -197,10 +200,38 @@ h3,
 
 .advantage-item {
   width: 400px;
-  height: 384px;
+  /* padding-top: 100px; */
+  padding-bottom: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  background-position: center 90px;
+}
+
+.town-container {
+  background-image: url("../image/cafe.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.bridge-container {
+  background-image: url("../image/devils-bridge.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.bridge {
+  margin-left: auto;
+}
+
+.text-tile {
+  width: 250px;
+  margin: 0 auto;
+}
+
+.text-sedona {
+  width: 220px;
 }
 
 .blue-tile {
@@ -216,6 +247,7 @@ h3,
   background-size: 75px 72px;
   background-repeat: no-repeat;
   background-color: rgba(131, 179, 211, 0.12);
+  padding-top: 75px;
 }
 
 .food {
@@ -223,6 +255,7 @@ h3,
   background-size: 74px 70px;
   background-repeat: no-repeat;
   background-color: #ffffff;
+  padding-top: 75px;
 }
 
 .souvenirs {
@@ -230,6 +263,12 @@ h3,
   background-size: 74px 70px;
   background-repeat: no-repeat;
   background-color: rgba(131, 179, 211, 0.12);
+  padding-top: 75px;
+}
+
+.number {
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .area,
@@ -247,7 +286,8 @@ h3,
 
 .search-hotels {
   text-align: center;
-  height: 417px;
+  padding-top: 91px;
+  padding-bottom: 91px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -257,6 +297,7 @@ h3,
   display: flex;
 
   list-style-type: none;
+  padding: 0;
 }
 
 .contacts-container {
@@ -264,7 +305,8 @@ h3,
   background-color: #ffffff;
   padding: 0 70px;
   justify-content: space-between;
-  height: 120px;
+  padding-top: 40px;
+  padding-bottom: 30px;
   align-items: center;
 }
 
@@ -283,7 +325,8 @@ h3,
   background-repeat: no-repeat;
   background-color: #83b3d3;
   text-align: center;
-  height: 411px;
+  padding-bottom: 138px;
+  padding-top: 90px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -291,7 +334,8 @@ h3,
 
 .footer-inner {
   text-align: center;
-  height: 411px;
+  padding-bottom: 138px;
+  padding-top: 90px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -302,6 +346,16 @@ h3,
 .telephone {
   font-size: 30px;
   line-height: 30px;
+  text-decoration: none;
+}
+
+.academy {
+  display: block;
+  width: 115px;
+  height: 34px;
+  background-image: url("../image/html-academy.svg");
+  background-size: 115px 34px;
+  background-repeat: no-repeat;
 }
 
 .button-green {
@@ -354,26 +408,44 @@ h3,
 }
 
 .twitter {
+  display: block;
+  width: 18px;
+  height: 15px;
+  margin: 15px;
   background-image: url("../image/twitter.svg");
   background-repeat: no-repeat;
 }
 
 .facebook {
+  display: block;
+  width: 10px;
+  height: 18px;
+  margin: 15px;
   background-image: url("../image/fb.svg");
   background-repeat: no-repeat;
 }
 
 .youtube {
+  display: block;
+  width: 20px;
+  height: 16px;
+  margin: 15px;
   background-image: url("../image/youtube.svg");
   background-repeat: no-repeat;
 }
 
 .search {
+  display: block;
+  width: 18px;
+  height: 18px;
   background-image: url("../image/search.svg");
   background-repeat: no-repeat;
 }
 
 .like {
+  display: block;
+  width: 18px;
+  height: 17px;
   background-image: url("../image/like.svg");
   background-repeat: no-repeat;
 }
