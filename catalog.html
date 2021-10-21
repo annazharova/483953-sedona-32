@@ -42,8 +42,8 @@
           <header class="inner-header">
             <h1 class="inner-header-title white">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
-              <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="index.html">Главная</a>
+              <li class="breadcrumbs-item breadcrumb-index">
+                <a class="breadcrumbs-link visually-hidden" href="index.html">Главная</a>
               </li>
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link white">Гостиницы</a>
@@ -102,7 +102,7 @@
             <button class="reset" type="button">Сбросить</button>
           </form>
         </div>
-          <section>
+          <section class="search-lead">
             <h2 class="visually-hidden">Результаты поиска</h2>
             <p class="lead">Найдено гостиниц: <span>38</span></p>
             <form class="sorting-type">
@@ -114,17 +114,19 @@
               </select>
               <button class="visually-hidden" type="submit">Отсортировать продукты</button>
             </form>
-            <a href="#" class="button">
-              <span class="visually-hidden">Показать список</span>
-            </a>
-            <a href="#" class="button">
-              <span class="visually-hidden">Показать слайдшоу</span>
-            </a>
-            <a href="#" class="button">
-              <span class="visually-hidden">Показать карточки</span>
-            </a>
+            <ul class="modes">
+              <a href="#" class="button mode-tile">
+                <span class="visually-hidden">Показать карточки</span>
+              </a>
+              <a href="#" class="button mode-slide">
+                <span class="visually-hidden">Показать слайдшоу</span>
+              </a>
+              <a href="#" class="button mode-list">
+                <span class="visually-hidden">Показать список</span>
+              </a>
+            </ul>
           </section>
-          <section>
+          <section class="hotels-result">
             <h2 class="visually-hidden">Найденные гостиницы</h2>
             <ul class="product-list">
               <li class="product-card">
@@ -168,39 +170,39 @@
                 <p class="rating">Рейтинг 9,2</p>
               </li>
             </ul>
-            <a href="#" class="button-blue">Загрузить ещё</a>
-            <ul class="pagination">
-              <li class="pagination-item">
-                <a class="pagination-link pagination-current button-blue">1</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link button-blue" href="#">2</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link button-blue" href="#">3</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link button-blue" href="#">4</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link button-blue" href="#">...</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link pagination-next" href="#">
-                  <span class="visually-hidden button-blue">10</span>
-                </a>
-              </li>
-
-              <form action="https://echo.htmlacademy.ru/courses" method="get">
-              <p class="text-main">Гостиниц на странице:</p>
-                <select name="quantity">
-                  <option value="4">4</option>
-                  <option value="8">8</option>
-                  <option value="16">16</option>
-                  <option value="20">20</option>
-                </select>
-                <button class="button-blue" type="button">Применить</button>
-              </form>
+            <a href="#" class="button-blue load-more">Загрузить ещё</a>
+            <div class="pagination-container">
+              <ul class="pagination">
+                <li class="pagination-item">
+                  <a class="pagination-link pagination-current button-blue">1</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link button-blue" href="#">2</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link button-blue" href="#">3</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link button-blue" href="#">4</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link button-blue" href="#">...</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link button-blue" href="#">10</a>
+                </li>
+              </ul>
+                <form class="quantity-container" action="https://echo.htmlacademy.ru/courses" method="get">
+                <p class="text-main">Гостиниц на странице:</p>
+                  <select name="quantity">
+                    <option value="4">4</option>
+                    <option value="8">8</option>
+                    <option value="16">16</option>
+                    <option value="20">20</option>
+                  </select>
+                  <button class="button-blue" type="button">Применить</button>
+                </form>
+            </div>
           </section>
       </div>
     </main>
@@ -209,9 +211,9 @@
       <div class="footer-inner">
         <p class="lead">Подпишитесь на рассылку</p>
       <p class="text-main">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
-      <form action="https://echo.htmlacademy.ru/courses" method="post">
-        <input type="text" name="subscribe" placeholder="Ваш e-mail">
-        <input type="submit" class="button-blue" value="Подписаться">
+      <form class="subscribe-form" action="https://echo.htmlacademy.ru/courses" method="post">
+        <input class="subscribe-email" type="text" name="subscribe" placeholder="Ваш e-mail">
+        <input type="submit" class="button-blue button-subscribe" value="Подписаться">
       </form>
       </div>
       <div class="contacts-container">
