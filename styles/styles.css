@@ -150,6 +150,21 @@ a {
   border-radius: 4px;
 }
 
+.product-card > .button-brown {
+  grid-column: 3 / 4;
+}
+
+.product-card > .button-blue {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+.product-card > .button-green {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+
 .search-lead {
   display: flex;
   align-items: baseline;
@@ -431,7 +446,8 @@ h3,
 }
 
 .catalog-filter-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 220px 220px auto 160px;
 }
 
 .catalog-filter-group {
@@ -492,26 +508,45 @@ h3,
 .product-list {
   padding: 0;
   list-style-type: none;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
+  display: grid;
+  gap: 60px;
 }
 
 .product-card-link {
   font-size: 24px;
   line-height: 31px;
   font-weight: bold;
+  grid-column: 2 / 4;
 }
 
-.text-main {
-  font-size: 18px;
-  line-height: 23px;
+.product-card {
+  display: grid;
+  grid-template-columns: 180px auto auto 160px;
+  grid-template-rows: auto auto auto;
+  gap: 8px;
+}
+
+.product-card-image {
+  grid-row: 1 / -1;
+}
+
+.hotel-type {
+  text-align: left;
+  grid-column: 2 / 3;
+}
+
+.price {
+  grid-column: 3 / 4;
 }
 
 .rating {
   font-size: 16px;
   line-height: 21px;
   text-transform: uppercase;
+  grid-column: -1 / -2;
 }
 
 .load-more  {
