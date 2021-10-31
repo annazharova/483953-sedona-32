@@ -30,7 +30,7 @@
             <a class="navigation-link like" href="#"><span class="visually-hidden">Избранное</span><span>12</span></a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link button-brown" href="#">Хочу сюда!</a>
+            <a class="navigation-link button button-brown want-here" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -99,8 +99,8 @@
 
             </fieldset>
             <div>
-              <button class="button-blue" type="button">Применить</button>
-              <button class="reset" type="button">Сбросить</button>
+              <button class="button-blue button" type="button">Применить</button>
+              <button class="reset button" type="button">Сбросить</button>
             </div>
           </form>
         </div>
@@ -140,7 +140,7 @@
                 <p class="visually-hidden">Категория гостиницы: 4 звезды</p>
                 <a href="#" class="button button-brown">Подробнее</a>
                 <button type="button" class="button button-blue">В избранное</button>
-                <p class="rating">Рейтинг 8,5</p>
+                <p class="rating">Рейтинг: 8,5</p>
               </li>
               <li class="product-card">
                 <a href="#" class="product-card-image">
@@ -151,7 +151,7 @@
                 <p class="visually-hidden">Категория гостиницы: 3 звезды</p>
                 <a href="#" class="button button-brown">Подробнее</a>
                 <button type="button" class="button button-blue">В избранное</button>
-                <p class="rating">Рейтинг 8,9</p>
+                <p class="rating">Рейтинг: 8,9</p>
               </li>
               <li class="product-card">
                 <a href="#" class="product-card-image">
@@ -162,7 +162,7 @@
                 <p class="visually-hidden">Категория гостиницы: 2 звезды</p>
                 <a href="#" class="button button-brown">Подробнее</a>
                 <button type="button" class="button button-green">В избранном</button>
-                <p class="rating">Рейтинг 9,2</p>
+                <p class="rating">Рейтинг: 9,2</p>
               </li>
               <li class="product-card">
                 <a href="#" class="product-card-image">
@@ -173,7 +173,7 @@
                 <p class="visually-hidden">Категория гостиницы: 2 звезды</p>
                 <a href="#" class="button button-brown">Подробнее</a>
                 <button type="button" class="button button-blue">В избранное</button>
-                <p class="rating">Рейтинг 9,2</p>
+                <p class="rating">Рейтинг: 9,2</p>
               </li>
             </ul>
             <a href="#" class="button-blue load-more">Загрузить ещё</a>
@@ -200,13 +200,13 @@
               </ul>
                 <form class="quantity-container" action="https://echo.htmlacademy.ru/courses" method="get">
                 <p class="text-main">Гостиниц на странице:</p>
-                  <select name="quantity">
+                  <select class="select-quantity" name="quantity">
                     <option value="4">4</option>
                     <option value="8">8</option>
                     <option value="16">16</option>
                     <option value="20">20</option>
                   </select>
-                  <button class="button-blue" type="button">Применить</button>
+                  <button class="button-blue button visually-hidden" type="button">Применить</button>
                 </form>
             </div>
           </section>
@@ -215,12 +215,14 @@
 
     <footer class="page-footer">
       <div class="footer-inner">
-        <p class="lead">Подпишитесь на рассылку</p>
-      <p class="text-main">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
-      <form class="subscribe-form" action="https://echo.htmlacademy.ru/courses" method="post">
-        <input class="subscribe-email" type="text" name="subscribe" placeholder="Ваш e-mail">
-        <input type="submit" class="button-blue button-subscribe" value="Подписаться">
-      </form>
+        <div class="subscribe-text">
+          <p class="lead">Подпишитесь на рассылку</p>
+          <p class="text-main">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru/courses" method="post">
+            <input class="subscribe-email" type="text" name="subscribe" placeholder="Ваш e-mail">
+            <input type="submit" class="button-blue button-subscribe" value="Подписаться">
+          </form>
+        </div>
       </div>
       <div class="contacts-container">
         <ul class="social-list">
@@ -229,7 +231,9 @@
           <li class="social-item youtube"><a class="visually-hidden" href="https://www.youtube.com/c/HTMLAcademyRUS">Youtube</a></li>
         </ul>
         <a class="telephone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <a href="https://htmlacademy.ru/">HTML Academy</a>
+        <div class="academy">
+          <a href="https://htmlacademy.ru/" class="visually-hidden">HTML Academy</a>
+        </div>
       </div>
     </footer>
 

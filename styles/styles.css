@@ -36,7 +36,6 @@ body {
 .page-header {
   display: flex;
   flex-grow: 0;
-  flex: 0 0 auto;
 }
 
 .page-footer {
@@ -107,22 +106,29 @@ a {
 
 .navigation-list {
   margin: 0;
-  padding: 0 70px;
-  width: 430px;
+  padding: 0;
+  /* width: 430px; */
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   background-color: #ffffff;
   list-style-type: none;
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
+  align-items: center; */
+  display: grid;
+  grid-template-columns: max-content max-content max-content;
   align-items: center;
+  padding-left: 55px;
 }
 
 .navigation-user {
-  max-width: 250px;
-  margin-left: auto;
-
+  /* max-width: 250px; */
+  /* margin-left: auto; */
+  grid-template-columns: 50px 50px 160px;
+  justify-self: end;
+  align-items: center;
+  padding-right: 70px;
 }
 
 .navigation-link {
@@ -142,6 +148,21 @@ a {
   line-height: 36px;
   text-transform: uppercase;
   border-radius: 4px;
+  text-align: center;
+  width: 160px;
+  height: 48px;
+  padding: 0;
+  border-style: none;
+  font-size: 16px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.reset {
+  background-color: #ffffff00;
+  color: #ffffff;
+  font-weight: 400;
+  text-transform: capitalize;
 }
 
 .button-brown {
@@ -152,6 +173,9 @@ a {
 
 .product-card > .button-brown {
   grid-column: 3 / 4;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 .product-card > .button-blue {
@@ -164,10 +188,18 @@ a {
   grid-row: 3 / 4;
 }
 
+.want-here {
+  padding: 0;
+  width: 160px;
+  height: 37px;
+  display: block;
+  box-sizing: border-box;
+  font-size: 16px;
+}
 
 .search-lead {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   padding: 0 71px;
 }
@@ -180,7 +212,6 @@ a {
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  padding-top: 50px;
 }
 
 .lead-container {
@@ -347,7 +378,7 @@ h3,
   border-radius: 4px;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 20px;
+  /* font-size: 20px; */
   line-height: 26px;
 }
 
@@ -381,6 +412,18 @@ h3,
 
 .quantity-container {
   display: flex;
+  height: 48px;
+  align-items: center;
+}
+
+.select-quantity {
+  height: 48px;
+  width: 160px;
+}
+
+.select-control {
+  height: 48px;
+  width: 260px;
 }
 
 .footer-index {
@@ -524,7 +567,7 @@ h3,
 
 .product-card {
   display: grid;
-  grid-template-columns: 180px auto auto 160px;
+  grid-template-columns: 180px 160px auto 160px;
   grid-template-rows: auto auto auto;
   gap: 8px;
 }
@@ -536,6 +579,7 @@ h3,
 .hotel-type {
   text-align: left;
   grid-column: 2 / 3;
+  font-size: 18px;
 }
 
 .price {
@@ -547,6 +591,16 @@ h3,
   line-height: 21px;
   text-transform: uppercase;
   grid-column: -1 / -2;
+
+  background-color: #F2F2F2;
+  height: 37px;
+  width: 160px;
+  border-radius: 4px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  align-self: end;
 }
 
 .load-more  {
@@ -604,6 +658,7 @@ h3,
 .pagination-container {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 .twitter {
