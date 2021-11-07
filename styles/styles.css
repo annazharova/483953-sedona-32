@@ -795,17 +795,23 @@ TODO:*/
   border: none;
 }
 
-.social-item:hover {
-  background: #68A2CA;
+.social-item a {
+  width: 18px;
+  height: 15px;
+  display: inline-block;
 }
 
-.social-item:focus {
+.social-item a:hover {
+  fill: #68A2CA;
+}
+
+.social-item a:focus {
   border: 3px solid #83B3D3;
   box-sizing: border-box;
   border-radius: 10px;
 }
 
-.social-item:active {
-  background: #68A2CA;
+.social-item a:active {
+  /* background: #68A2CA; */
   opacity: 0.3;
 }
