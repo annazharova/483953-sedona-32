@@ -22,15 +22,21 @@
           <a class="logo" href="index.html">
             <img src="image/sedona-logo.png" width="138" height="70" alt="Логотип Седоны">
           </a>
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link search" href="#"><span class="visually-hidden">Поиск</span></a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link like" href="#"><span class="visually-hidden">Избранное</span><span class="like-number">12</span></a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link button button-brown want-here" href="#">Хочу сюда!</a>
+          <ul class="navigation-list navigation-user">
+            <li class="navigation-item">
+              <a class="navigation-link search" href="#">
+                <svg aria-hidden="true" focusable="false" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m18 16.5-3.7-3.7A8 8 0 0 0 8-.1C3.6-.1 0 3.6 0 8a8 8 0 0 0 12.9 6.3l3.7 3.7 1.4-1.5ZM8 14a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6Z" fill="#000"></path>
+                </svg>
+                <span class="visually-hidden">Поиск</span></a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link like" href="#">
+                <svg aria-hidden="true" focusable="false" width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.9 17a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0 8 .5 9 1.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" fill="#000"/></svg>
+                <span class="visually-hidden">Избранное</span><span class="like-number">12</span></a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link button button-brown want-here" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -59,13 +65,13 @@
               <legend class="catalog-filter-title white">Инфраструктура:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
-                  <label><input type="checkbox" name="pool" checked><span class="text-basic white">Бассейн</span></label>
+                  <label class="custom-checkbox"><input type="checkbox" name="pool" checked><span class="text-basic white">Бассейн</span></label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label><input type="checkbox" name="parking" checked><span class="text-basic white">Парковка</span></label>
+                  <label class="custom-checkbox"><input type="checkbox" name="parking" checked><span class="text-basic white">Парковка</span></label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label><input type="checkbox" name="wi-fi"><span class="text-basic white">Wi-Fi</span></label>
+                  <label class="custom-checkbox"><input type="checkbox" name="wi-fi"><span class="text-basic white">Wi-Fi</span></label>
                 </li>
               </ul>
             </fieldset>
@@ -73,13 +79,13 @@
               <legend class="catalog-filter-title white">Тип жилья:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
-                  <label><input type="radio" name="accomodation" value="hotel" checked><span class="text-basic white">Гостиница</span></label>
+                  <label class="custom-radio"><input type="radio" name="accomodation" value="hotel" checked><span class="text-basic white">Гостиница</span></label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label><input type="radio" name="accomodation" value="motel"><span class="text-basic white">Мотель</span></label>
+                  <label class="custom-radio"><input type="radio" name="accomodation" value="motel"><span class="text-basic white">Мотель</span></label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label><input type="radio" name="accomodation" value="apartament"><span class="text-basic white">Апартаменты</span></label>
+                  <label class="custom-radio"><input type="radio" name="accomodation" value="apartament"><span class="text-basic white">Апартаменты</span></label>
                 </li>
               </ul>
             </fieldset>
