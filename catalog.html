@@ -91,23 +91,30 @@
             </fieldset>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title white">Стоимость, ₽:</legend>
-              <button class="range-toggle toggle-min" type="button">
-                <span class="visually-hidden">Изменить минимальную цену</span>
-              </button>
-              <button class="range-toggle toggle-max" type="button">
-                <span class="visually-hidden">Изменить максимальную цену</span>
-              </button>
 
-              <label class="catalog-filter-label">
-                от <input class="catalog-filter-input" type="number" name="min-price" value="0">
-              </label>
+              <div class="range">
 
-              <label class="catalog-filter-label">
-                до <input class="catalog-filter-input" type="number" name="max-price" value="9000">
-              </label>
-
+                <div class="range-wrapper-inputs">
+                  <label class="catalog-filter-label">
+                    <input class="range-input" type="number" value="0" name="min-price"><span>от</span>
+                  </label>
+                  <label class="catalog-filter-label">
+                    <input class="range-input" type="number" value="9000" name="max-price"><span>до</span>
+                  </label>
+                </div>
+                <div class="range-scale">
+                  <div class="range-bar">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </fieldset>
-            <div>
+            <div class="buttons-container">
               <button class="button-blue button" type="button">Применить</button>
               <button class="reset button" type="reset">Сбросить</button>
             </div>
