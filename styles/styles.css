@@ -582,14 +582,7 @@ div.advantage-list {
 
 .breadcrumbs-link {
   font-size: 16px;
-}
-
-.breadcrumbs-link.white {
-  padding-left: 15px;
-  background-image: url("../image/nav-link.svg");
-  background-repeat: no-repeat;
-  background-position-x: left;
-  background-position-y: center;
+  text-decoration: none;
 }
 
 .catalog-filter-container {
@@ -1420,4 +1413,13 @@ opacity: 0.3;
 
 .custom-radio>input:disabled+span::before {
   background-color: #e9ecef;
+}
+
+
+.breadcrumbs-item + .breadcrumbs-item::before {
+  padding-right: 7px;
+  content: url("../image/nav-link.svg");
+  /* background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: center; */
 }
