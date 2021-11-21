@@ -1143,6 +1143,13 @@ input::-webkit-inner-spin-button {
   padding: 12px;
 }
 
+.navigation-link:hover path {
+  fill: #756257;
+}
+
+.navigation-link:active path {
+  fill: #7562574d;
+}
 
 .breadcrumbs-item a:hover {
   opacity: 0.6;
