@@ -222,10 +222,9 @@ justify-self: end;
 }
 
 .photo-sedona {
-  padding-bottom: 55px;
+  margin-bottom: 55px;
   display: inline-block;
   position: relative;
-
 }
 
 .photo-sedona:after {
@@ -320,16 +319,20 @@ h3 {
 }
 
 div.advantage-list {
-  padding-bottom: 110px;}
+  padding-bottom: 88px;
+}
 
 .advantage-item {
   width: 400px;
-  padding-bottom: 87px;
+  padding-bottom: 86px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   background-position: center 90px;
+}
+
+.advantage-list .advantage-item {
+  padding-bottom: 92px;
 }
 
 .town-container {
@@ -393,13 +396,15 @@ div.advantage-list {
   padding-bottom: 30px;
 }
 
-.area,
-.tourists {
+.advantage-list .area,
+.advantage-list .tourists {
   background-color: rgba(131, 179, 211, 0.12);
+  padding-bottom: 106px;
 }
 
-.road {
+.advantage-list .road {
   background-color: rgba(131, 179, 211, 0.2);
+  padding-bottom: 106px;
 }
 
 .white {
