@@ -59,31 +59,21 @@ body {
   background-color: #ffffff;
 }
 
-h1 {
+.header1 {
   font-style: normal;
   font-weight: bold;
   font-size: 60px;
   line-height: 78px;
 }
 
-h2 {
+.header2 {
   font-size: 40px;
   line-height: 48px;
-
 }
 
-h3 {
+.header3 {
   font-size: 30px;
   line-height: 36px;
-}
-
-h4 {
-  font-size: 24px;
-  line-height: 28px;
-}
-
-a {
-  color: #000000;
 }
 
 .visually-hidden {
@@ -130,6 +120,7 @@ a {
   text-decoration: none;
   padding: 17px 0;
   margin: 0 17px;
+  color: #000000;
 }
 
 .navigation-item {
@@ -407,10 +398,6 @@ div.advantage-list {
   padding-bottom: 106px;
 }
 
-.white {
-  color: #ffffff;
-}
-
 .search-hotels {
   text-align: center;
   padding-bottom: 91px;
@@ -490,7 +477,7 @@ div.advantage-list {
   border-radius: 0px 10px 10px 0px;
   border: 0;
   font-size: 20px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .quantity-container {
@@ -516,7 +503,7 @@ div.advantage-list {
   height: 48px;
   width: 285px;
   color: #333333;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 23px;
   padding: 11px;
@@ -558,6 +545,7 @@ div.advantage-list {
   text-decoration: none;
   font-size: 40px;
   line-height: 40px;
+  color: #000000;
 }
 
 .academy a{
@@ -601,6 +589,7 @@ div.advantage-list {
 .breadcrumbs-link {
   font-size: 16px;
   text-decoration: none;
+  color: #000000;
 }
 
 .catalog-filter-container {
@@ -821,6 +810,7 @@ input::-webkit-inner-spin-button {
   place-self: baseline;
   padding: 4px 10px;
   margin: -4px -10px;
+  color: #000000;
 }
 
 .product-card {
@@ -1568,4 +1558,8 @@ opacity: 0.3;
   box-shadow: inset 0 0 0 3px #83B3D3;
   border-radius: 4px;
   box-sizing: border-box;
+}
+
+.white {
+  color: #ffffff;
 }
