@@ -48,6 +48,7 @@ body {
 
 .main-container {
   display: flex;
+  flex-direction: column;
   flex: 1 0 auto;
 }
 
@@ -57,6 +58,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 .header1 {
@@ -88,7 +90,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 400px);
   width: 1200px;
-  height: 65px;
+  min-height: 65px;
   margin: 0 auto;
   background-color: #ffffff;
   position: relative;
@@ -118,8 +120,8 @@ body {
 
 .navigation-link {
   text-decoration: none;
-  padding: 17px 0;
-  margin: 0 17px;
+  padding: 17px;
+  /* margin: 0 17px; */
   color: #000000;
 }
 
@@ -975,16 +977,18 @@ input::-webkit-inner-spin-button {
 }
 
 .search {
-  padding: 10px;
-  margin: -10px;
-  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
 }
 
 .like {
   position: relative;
-  padding: 10px;
-  margin: -10px;
-  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
 }
 
 .like-number {
@@ -1001,8 +1005,8 @@ input::-webkit-inner-spin-button {
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 5px;
-  left: 20px;
+  top: 0px;
+  left: 23px;
 }
 
 .inner-header-title {
@@ -1028,6 +1032,8 @@ input::-webkit-inner-spin-button {
 
 .current {
   border-bottom: 2px solid #756257;
+  padding: 17px 0;
+  margin: 0 17px;
 }
 
 .want-here:hover,
@@ -1139,12 +1145,36 @@ input::-webkit-inner-spin-button {
   padding: 12px;
 }
 
-.navigation-link:hover path {
+.like:hover path {
   fill: #756257;
 }
 
-.navigation-link:active path {
+.search:hover path {
+  fill: #756257;
+}
+
+.like:active path {
   fill: #7562574d;
+}
+
+.like:active .like-number {
+  color: #ffffff4d;
+}
+
+.search:active path {
+  fill: #7562574d;
+}
+
+.like:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 3px #83B3D3;
+  border-radius: 10px;
+}
+
+.search:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 3px #83B3D3;
+  border-radius: 10px;
 }
 
 .breadcrumbs-item a:hover {
