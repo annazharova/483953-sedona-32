@@ -1486,28 +1486,28 @@ opacity: 0.3;
   position: relative;
 }
 
-.popover {
+.popover-like {
   position: absolute;
   top: 62px;
   right: 72px;
   z-index: 1;
   width: 400px;
+  min-height: 140px;
   font-family: "PT Sans", "Arial", sans-serif;
   color: #242424;
   background-color: #FFFFFF;
-  min-height: 140px;
   box-sizing: border-box;
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
   outline: 1px solid #E6E6E6;
-  display: none;
-}
-
-.popover-open {
   display: block;
 }
 
-.popover::before {
+.popover-like-open {
+  display: block;
+}
+
+.popover-like::before {
   content: url("../image/triangle.svg");
   position: absolute;
   top: -19px;
@@ -1599,6 +1599,11 @@ opacity: 0.3;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
   z-index: 3;
+  display: none;
+}
+
+.modal-container-open {
+  display: flex;
 }
 
 .modal {
@@ -1645,7 +1650,7 @@ opacity: 0.3;
   line-height: 40px;
 }
 
-.auth-form {
+.hotel-form {
   display: grid;
   grid-template-columns: 155px 133px 153px 133px;
   grid-template-rows: repeat(4, 90px);
@@ -1653,13 +1658,13 @@ opacity: 0.3;
 
 }
 
-.auth-form-user-options {
+.hotel-form-user-options {
   display: flex;
   justify-content: space-between;
   font-weight: 400;
 }
 
-.auth-form-user-options .control-label {
+.hotel-form-user-options .control-label {
   font-weight: 400;
 }
 
@@ -1675,12 +1680,20 @@ opacity: 0.3;
 .field {
   width: 133px;
   height: 50px;
-  background: #F2F2F2;
+  background-color: #F2F2F2;
   border-radius: 4px;
   border: none;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  color: #00000099;
 }
 
-.auth-form-button {
+.hotel-form-button {
   background: #83B3D3;
   border-radius: 10px;
 
@@ -1699,6 +1712,10 @@ opacity: 0.3;
 .date-in {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
 }
 
 .date-in + .field {
@@ -1709,6 +1726,10 @@ opacity: 0.3;
 .date-out {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
 }
 
 .date-out + .field {
@@ -1719,6 +1740,10 @@ opacity: 0.3;
 .adults {
   grid-column: 1 / 2;
   grid-row: 3 / 4;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
 }
 
 .adults + .field {
@@ -1730,9 +1755,121 @@ opacity: 0.3;
   grid-column: 3 / 4;
   grid-row: 3 / 4;
   padding-left: 56px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+  position:relative;
 }
 
 .children + .field {
   grid-column: 4 / 5;
   grid-row: 3 / 4;
+}
+
+.form-info {
+  background-color: #83B3D3;
+  width: 25px;
+  height: 25px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  background-image:url("../image/info.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 7px;
+  left: 112px;
+}
+
+.form-info:active {
+  background-color: #68A2CA
+}
+
+.field:hover {
+  background-color: #E6E6E6;
+}
+
+.field:focus {
+  background: #E6E6E6;
+  outline: none;
+  box-shadow: inset 0 0 0 3px #83B3D3;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.field:active {
+  background: #FFFFFF;
+  outline: none;
+  box-shadow: inset 0 0 0 2px #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus {
+  outline: none;
+  background-color: #E6E6E6;
+  border: 3px solid #83B3D3;
+}
+
+.modal-close-button:active {
+  border: none;
+  opacity: 0.3;
+  background-color: #E6E6E6;
+}
+
+.hotel-form-button:hover {
+  background-color: #68A2CA;
+}
+
+.hotel-form-button:focus {
+  outline: none;
+  background-color: #68A2CA;
+  box-shadow: inset 0 0 0 3px #756257;
+  border-radius: 10px;
+}
+
+.hotel-form-button:active {
+  box-shadow: none;
+  color: #FFFFFF4d;
+}
+
+
+.popover-info {
+  background-color: #333333;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  width: 256px;
+  min-height: 143px;
+  position: absolute;
+  left: -3px;
+  top: 47px;
+  display: none;
+}
+
+.popover-info-open {
+  display: block;
+}
+
+.popover-info-text {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 18px 22px;
+  margin: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.popover-info::before {
+  content: url("../image/triangle-dark.svg");
+  position: absolute;
+  top: -26px;
+  left: 50%;
+  transform: translateX(-50%);
 }
