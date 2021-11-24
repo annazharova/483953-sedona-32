@@ -213,12 +213,27 @@
           <form class="hotel-form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="date-in" for="check-in">Дата заезда:</label>
               <span class="error">Сообщение об ошибке</span>
-              <input class="date-in-field field" type="text" id="check-in" name="check-in" required placeholder="Укажите дату">
+              <div class="date-in-field">
+                <input class="field" type="text" id="check-in" name="check-in" required placeholder="Укажите дату">
+                <button class="button-calendar">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.3" d="M14 2H12V0H11V2H4V0H3V2H1C0.4 2 0 2.4 0 3V6V7V14C0 14.5 0.4 15 1 15H14C14.5 15 15 14.5 15 14V7V6V3C15 2.4 14.5 2 14 2ZM14 14H1V7H14V14ZM1 6V3H3V5H4V3H11V5H12V3H14V6H1Z" fill="black"/>
+                  </svg>
+                </button>
+              </div>
+
               <label class="date-out" for="check-out">Дата выезда:</label>
               <span class="success">Сообщение об успехе</span>
-              <input class="date-out-field field" placeholder="Укажите дату" type="text" id="check-out" name="check-out" required>
-              <label class="adults" for="adults-counter">Взрослые:</label>
+              <div class="date-out-field">
+                <input class="field" type="text" id="check-in" name="check-in" required placeholder="Укажите дату">
+                <button class="button-calendar">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.3" d="M14 2H12V0H11V2H4V0H3V2H1C0.4 2 0 2.4 0 3V6V7V14C0 14.5 0.4 15 1 15H14C14.5 15 15 14.5 15 14V7V6V3C15 2.4 14.5 2 14 2ZM14 14H1V7H14V14ZM1 6V3H3V5H4V3H11V5H12V3H14V6H1Z" fill="black"/>
+                  </svg>
+                </button>
+              </div>
 
+              <label class="adults" for="adults-counter">Взрослые:</label>
               <div class="adults-form-field">
                 <button class="button-control button-minus" type="button">
                   <svg width="13" height="13" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
