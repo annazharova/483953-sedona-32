@@ -1525,17 +1525,17 @@ opacity: 0.3;
 
 .like-item {
   display: grid;
-  grid-template-columns: 50px auto 20px;
-  grid-template-rows: 24px 24px;
+  grid-template-columns: 50px auto 36px;
+  grid-template-rows: repeat(2, minmax(24px, auto));
   margin: 25px 25px 0 25px;
   column-gap: 17px;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .like-item-title {
   font-weight: bold;
   font-size: 18px;
-  line-height: 40px;
+  line-height: 21px;
   grid-column: 2 / 3;
   grid-row: 1 / 2;
   margin: 0;
@@ -1544,7 +1544,7 @@ opacity: 0.3;
 .like-item-type {
   font-weight: normal;
   font-size: 16px;
-  line-height: 40px;
+  line-height: 21px;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   margin: 0;
@@ -1568,13 +1568,50 @@ opacity: 0.3;
   margin-top: 25px;
 }
 
+.button-popover:hover {
+  background-color: #615048;
+}
+
+.button-popover:focus {
+  outline: none;
+  background-color: #615048;
+  border: 3px solid #83B3D3;
+  box-sizing: border-box;
+}
+
+.button-popover:active {
+  background-color: #615048;
+  color: #ffffff4d;
+  border: none;
+}
+
 .like-item-button {
-  width: 16px;
-  height: 16px;
+  width: 36px;
+  height: 36px;
   background-color: transparent;
   border: none;
   grid-column: 3 / 4;
-  grid-row: 1 / 2;
+  grid-row: 1 / -1;
+  padding: 0;
+  cursor: pointer;
+  fill: #000000;
+  opacity: 0.2;
+}
+
+.like-item-button:hover {
+  opacity: 1;
+}
+
+.like-item-button:focus {
+  border: 3px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 10px;
+  outline: none;
+  opacity: 1;
+}
+
+.like-item-button:active {
+  opacity: 0.1;
 }
 
 
