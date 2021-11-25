@@ -1826,7 +1826,7 @@ opacity: 0.3;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
-  line-height: 40px;
+  line-height: 1.2;
   margin-top: 10px;
 }
 
@@ -1849,9 +1849,10 @@ opacity: 0.3;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
-  line-height: 40px;
+  line-height: 1.2;
   position:relative;
   margin-top: 10px;
+  top: 12px;
 }
 
 .children-form-field {
@@ -1932,6 +1933,14 @@ opacity: 0.3;
   opacity: 0.2;
 }
 
+.form-info-container {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  bottom: 40px;
+  right: 50px;
+}
+
 .form-info {
   background-color: #83B3D3;
   width: 25px;
@@ -1942,10 +1951,15 @@ opacity: 0.3;
   background-image:url("../image/info.svg");
   background-repeat: no-repeat;
   background-position: center;
-  position: absolute;
-  top: 8px;
+  position: relative;
+  top: 12px;
   left: 108px;
 }
+
+.form-info-container:hover .popover-info {
+  display: block;
+}
+
 
 .form-info:active {
   background-color: #68A2CA
@@ -2017,7 +2031,9 @@ opacity: 0.3;
   position: absolute;
   left: -5px;
   top: 47px;
-  /* display: none; */
+  padding: 19px 21px;
+  box-sizing: border-box;
+  display: none;
 }
 
 .popover-info-open {
@@ -2030,14 +2046,13 @@ opacity: 0.3;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-  padding: 19px 21px;
   margin: 0;
 }
 
 .popover-info::before {
   content: url("../image/triangle-dark.svg");
   position: absolute;
-  top: -26px;
+  top: -14px;
   left: 50%;
   transform: translateX(-50%);
 }
