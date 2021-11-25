@@ -406,13 +406,17 @@ div.advantage-list {
 .social-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: row;
   list-style-type: none;
   padding: 0;
   width: 138px;
+  width: 33%;
 }
 
 .contacts-container {
   display: flex;
+  flex-wrap: wrap;
   background-color: #ffffff;
   padding: 0 57px;
   justify-content: space-between;
@@ -442,6 +446,13 @@ div.advantage-list {
 
 .subscribe-text {
   margin-bottom: 26px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.subscribe-form {
+  display: flex;
 }
 
 .subscribe-text .lead {
@@ -536,10 +547,18 @@ div.advantage-list {
 }
 
 .telephone {
+  text-align: center;
   text-decoration: none;
   font-size: 40px;
   line-height: 40px;
   color: #000000;
+}
+
+.academy {
+  width: 33%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 .academy a{
@@ -982,6 +1001,7 @@ input::-webkit-inner-spin-button {
   height: 40px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .like {
@@ -990,6 +1010,7 @@ input::-webkit-inner-spin-button {
   height: 40px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .like-number {
@@ -1852,7 +1873,6 @@ opacity: 0.3;
   line-height: 1.2;
   position:relative;
   margin-top: 10px;
-  top: 12px;
 }
 
 .children-form-field {
@@ -1952,8 +1972,8 @@ opacity: 0.3;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  top: 17px;
-  left: 102px;
+  top: 180px;
+  left: 445px;
 }
 
 .form-info-container:hover .popover-info {
@@ -2029,8 +2049,8 @@ opacity: 0.3;
   width: 253px;
   min-height: 143px;
   position: absolute;
-  left: -10px;
-  top: 57px;
+  left: 333px;
+  top: 219px;
   padding: 19px 21px;
   box-sizing: border-box;
   z-index: 3;
