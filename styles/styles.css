@@ -1671,7 +1671,7 @@ opacity: 0.3;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
   z-index: 3;
-  /* display: none; */
+  display: none;
 }
 
 .modal-container-open {
@@ -1952,8 +1952,8 @@ opacity: 0.3;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  top: 12px;
-  left: 108px;
+  top: 17px;
+  left: 102px;
 }
 
 .form-info-container:hover .popover-info {
@@ -2029,15 +2029,12 @@ opacity: 0.3;
   width: 253px;
   min-height: 143px;
   position: absolute;
-  left: -5px;
-  top: 47px;
+  left: -10px;
+  top: 57px;
   padding: 19px 21px;
   box-sizing: border-box;
+  z-index: 3;
   display: none;
-}
-
-.popover-info-open {
-  display: block;
 }
 
 .popover-info-text {
@@ -2052,7 +2049,7 @@ opacity: 0.3;
 .popover-info::before {
   content: url("../image/triangle-dark.svg");
   position: absolute;
-  top: -14px;
+  top: -17px;
   left: 50%;
   transform: translateX(-50%);
 }
